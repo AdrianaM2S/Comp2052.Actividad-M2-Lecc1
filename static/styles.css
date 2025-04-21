@@ -1,0 +1,157 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #a787b5;
+}
+
+header {
+    background-color: #a787b5;
+    padding: 10px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+/* Create nav bar */
+#bar {
+    list-style-type: none;
+    margin: 0;
+    padding: 1%;
+    overflow: hidden;
+    background-color: #230147;
+  }
+  
+  #item {
+    float: left;
+  }
+  
+  #item a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  #item a:hover {
+    background-color: #111;
+  }
+  
+  /*Item list*/
+  table {
+    border-collapse: collapse;
+    width: 50%;
+  }
+
+  td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #e9e4e4;
+    background-color: #b9b8b9;
+  }
+  th {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #e9e4e4;
+    background-color: #7a797b;
+  }
+
+  
+  /* Commission list */
+  #to-do {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style the list items */
+  #to-do #wips {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    list-style-type: none;
+    background: #eee;
+    font-size: 18px;
+    transition: 0.2s;
+    
+    /* make the list items unselectable */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Set all odd list items to a different color (zebra-stripes) */
+  #to-do #wips:nth-child(odd) {
+    background: #f9f9f9;
+  }
+  
+  /* Darker background-color on hover */
+  #to-do #wips:hover {
+    background: #ddd;
+  }
+  
+  /* When clicked on, add a background color and strike out text */
+  #to-do #wips.checked {
+    background: #6a5d5d;
+    color: #fff;
+    text-decoration: line-through;
+  }
+  
+  /* Style the close button */
+  .close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+  }
+  
+  .close:hover {
+    background-color: #230147; 
+    color: white;
+  }
+  
+  /* Style the header */
+  .header {
+    background-color: #230147;
+    padding: 30px 40px;
+    color: white;
+    text-align: center;
+  }
+  
+  /* Clear floats after the header */
+  .header:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Style the input */
+  input {
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    width: 75%;
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+  }
+  
+  /* Style the "Add" button */
+  .addBtn {
+    padding: 10px;
+    width: 20%;
+    background: #d9d9d9;
+    color: #555;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 0;
+  }
+  
+  .addBtn:hover {
+    background-color: #bbb;
+  }

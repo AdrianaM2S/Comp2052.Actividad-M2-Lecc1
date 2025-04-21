@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block title %}Product inventory{% endblock %}
+{% block content %}
+    <h2> Available Products</h2>
+    <table border="1">
+        <tr>
+            <th>Items</th>
+            <th>Price</th>
+            <th>In stock</th>
+        </tr>
+        {% for product in data.products %}
+        <tr>
+            <td>{{ product.item }}</td>
+            <td>{{ product.price }}</td>
+            <td>{{ product.inStock }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+{% endblock %}

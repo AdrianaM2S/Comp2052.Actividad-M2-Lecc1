@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}Mi Aplication{% endblock %}</title>
+    <link
+      rel="stylesheet"
+      href="../static/styles.css"
+    />
+  </head>
+</head>
+<body>
+    <header>
+        <nav id="navBar">
+            <ul id="bar">
+                <li id="item"><a href="/">Main page</a></li>
+                <li id="item"><a href="/commissions">List of commissions</a></li>
+                <li id="item"><a href="/products">Items</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+</body>
+</html>
